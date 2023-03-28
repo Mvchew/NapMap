@@ -21,7 +21,6 @@ C:\Users\Melvi\source\repos\NapMap\NapMap\obj\Debug\net6.0\staticwebassets\msbui
 C:\Users\Melvi\source\repos\NapMap\NapMap\obj\Debug\net6.0\staticwebassets.pack.json
 C:\Users\Melvi\source\repos\NapMap\NapMap\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\Melvi\source\repos\NapMap\NapMap\obj\Debug\net6.0\staticwebassets.development.json
-C:\Users\Melvi\source\repos\NapMap\NapMap\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Melvi\source\repos\NapMap\NapMap\obj\Debug\net6.0\scopedcss\bundle\NapMap.styles.css
 C:\Users\Melvi\source\repos\NapMap\NapMap\obj\Debug\net6.0\scopedcss\projectbundle\NapMap.bundle.scp.css
 C:\Users\Melvi\source\repos\NapMap\NapMap\obj\Debug\net6.0\NapMap.dll
@@ -30,3 +29,4 @@ C:\Users\Melvi\source\repos\NapMap\NapMap\obj\Debug\net6.0\NapMap.pdb
 C:\Users\Melvi\source\repos\NapMap\NapMap\obj\Debug\net6.0\NapMap.genruntimeconfig.cache
 C:\Users\Melvi\source\repos\NapMap\NapMap\obj\Debug\net6.0\ref\NapMap.dll
 C:\Users\Melvi\source\repos\NapMap\NapMap\bin\Debug\net6.0\libman.json
+C:\Users\Melvi\source\repos\NapMap\NapMap\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
