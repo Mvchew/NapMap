@@ -245,6 +245,58 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\Melvi\\source\\repos\\NapMap\\NapMap\\wwwroot\\lib\\leaflet\\images\\layers-2x.png",
+      "PackagePath": "staticwebassets\\lib\\leaflet\\images\\layers-2x.png"
+    },
+    {
+      "Id": "C:\\Users\\Melvi\\source\\repos\\NapMap\\NapMap\\wwwroot\\lib\\leaflet\\images\\layers.png",
+      "PackagePath": "staticwebassets\\lib\\leaflet\\images\\layers.png"
+    },
+    {
+      "Id": "C:\\Users\\Melvi\\source\\repos\\NapMap\\NapMap\\wwwroot\\lib\\leaflet\\images\\marker-icon-2x.png",
+      "PackagePath": "staticwebassets\\lib\\leaflet\\images\\marker-icon-2x.png"
+    },
+    {
+      "Id": "C:\\Users\\Melvi\\source\\repos\\NapMap\\NapMap\\wwwroot\\lib\\leaflet\\images\\marker-icon.png",
+      "PackagePath": "staticwebassets\\lib\\leaflet\\images\\marker-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\Melvi\\source\\repos\\NapMap\\NapMap\\wwwroot\\lib\\leaflet\\images\\marker-shadow.png",
+      "PackagePath": "staticwebassets\\lib\\leaflet\\images\\marker-shadow.png"
+    },
+    {
+      "Id": "C:\\Users\\Melvi\\source\\repos\\NapMap\\NapMap\\wwwroot\\lib\\leaflet\\leaflet-src.js",
+      "PackagePath": "staticwebassets\\lib\\leaflet\\leaflet-src.js"
+    },
+    {
+      "Id": "C:\\Users\\Melvi\\source\\repos\\NapMap\\NapMap\\wwwroot\\lib\\leaflet\\leaflet-src.js.map",
+      "PackagePath": "staticwebassets\\lib\\leaflet\\leaflet-src.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Melvi\\source\\repos\\NapMap\\NapMap\\wwwroot\\lib\\leaflet\\leaflet-src.min.js",
+      "PackagePath": "staticwebassets\\lib\\leaflet\\leaflet-src.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Melvi\\source\\repos\\NapMap\\NapMap\\wwwroot\\lib\\leaflet\\leaflet.css",
+      "PackagePath": "staticwebassets\\lib\\leaflet\\leaflet.css"
+    },
+    {
+      "Id": "C:\\Users\\Melvi\\source\\repos\\NapMap\\NapMap\\wwwroot\\lib\\leaflet\\leaflet.js",
+      "PackagePath": "staticwebassets\\lib\\leaflet\\leaflet.js"
+    },
+    {
+      "Id": "C:\\Users\\Melvi\\source\\repos\\NapMap\\NapMap\\wwwroot\\lib\\leaflet\\leaflet.js.map",
+      "PackagePath": "staticwebassets\\lib\\leaflet\\leaflet.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Melvi\\source\\repos\\NapMap\\NapMap\\wwwroot\\lib\\leaflet\\leaflet.min.css",
+      "PackagePath": "staticwebassets\\lib\\leaflet\\leaflet.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Melvi\\source\\repos\\NapMap\\NapMap\\wwwroot\\lib\\leaflet\\leaflet.min.js",
+      "PackagePath": "staticwebassets\\lib\\leaflet\\leaflet.min.js"
+    },
+    {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.NapMap.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

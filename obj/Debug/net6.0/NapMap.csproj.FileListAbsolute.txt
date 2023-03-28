@@ -29,3 +29,4 @@ C:\Users\Melvi\source\repos\NapMap\NapMap\obj\Debug\net6.0\refint\NapMap.dll
 C:\Users\Melvi\source\repos\NapMap\NapMap\obj\Debug\net6.0\NapMap.pdb
 C:\Users\Melvi\source\repos\NapMap\NapMap\obj\Debug\net6.0\NapMap.genruntimeconfig.cache
 C:\Users\Melvi\source\repos\NapMap\NapMap\obj\Debug\net6.0\ref\NapMap.dll
+C:\Users\Melvi\source\repos\NapMap\NapMap\bin\Debug\net6.0\libman.json
