@@ -1,6 +1,44 @@
 ﻿document.addEventListener("DOMContentLoaded", function () {
     const map = L.map('map').setView([51.0486, -114.0708], 12);
 
+    const markerForm = document.getElementById("marker-form");
+    const addMarkerForm = document.getElementById("add-marker-form");
+
+    map.on('click', function (e) {
+        markerForm.style.display = "block";
+        addMarkerForm.dataset.lat = e.latlng.lat;
+        addMarkerForm.dataset.lng = e.latlng.lng;
+    });
+
+    addMarkerForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const title = document.getElementById("title").value;
+        const description = document.getElementById("description").value;
+        const lat = parseFloat(addMarkerForm.dataset.lat);
+        const lng = parseFloat(addMarkerForm.dataset.lng);
+
+        console.log('Submitting LatLng:', lat, lng);
+
+        // Save the marker to the database
+        fetch("/api/markers", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ Title: title, Description: description, Latitude: lat, Longitude: lng })
+        }).then(response => {
+            if (response.ok) {
+                // Add the marker to the map
+                const marker = L.marker([lat, lng], { title, draggable: true });
+                marker.addTo(map);
+                markerForm.style.display = "none";
+                addMarkerForm.reset();
+            } else {
+                alert("Error saving marker");
+            }
+        });
+    });
+
     const osmLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     });
