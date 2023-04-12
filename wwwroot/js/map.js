@@ -60,9 +60,17 @@
             body: JSON.stringify({ Title: title, Description: description, Latitude: lat, Longitude: lng })
         }).then(response => {
             if (response.ok) {
-                // Add the marker to the map
-                const marker = L.marker([lat, lng], { title, draggable: true });
-                marker.addTo(map);
+                // Clear the map of existing markers
+                map.eachLayer(function (layer) {
+                    if (layer instanceof L.Marker && layer !== markerLayer) {
+                        map.removeLayer(layer);
+                    }
+                });
+
+                // Reload markers from the server
+                loadMarkers();
+
+                // Hide the marker form and reset its contents
                 markerForm.style.display = "none";
                 addMarkerForm.reset();
             } else {
@@ -70,6 +78,7 @@
             }
         });
     });
+
 
     const osmLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
