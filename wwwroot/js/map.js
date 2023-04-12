@@ -11,7 +11,18 @@
                 console.log("Fetched markers:", markers); // Log the fetched markers
                 markers.forEach(marker => {
                     if (marker.latitude && marker.longitude) {
-                        L.marker([marker.latitude, marker.longitude], { title: marker.title, draggable: true }).addTo(map);
+                        const markerInstance = L.marker([marker.latitude, marker.longitude], { title: marker.title, draggable: true }).addTo(map);
+
+                        // Add click event listener to the marker
+                        markerInstance.on('click', function (e) {
+                            const infoDiv = document.getElementById('info');
+                            const infoHTML = `
+                            <h4>${marker.title}</h4>
+                            <p>${marker.description}</p>
+                        `;
+                            infoDiv.innerHTML = infoHTML;
+                        });
+
                     } else {
                         console.error('Invalid marker data:', marker);
                     }
@@ -21,6 +32,7 @@
                 console.error("Error fetching markers:", error);
             });
     }
+
 
     loadMarkers();
 
