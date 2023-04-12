@@ -4,6 +4,26 @@
     const markerForm = document.getElementById("marker-form");
     const addMarkerForm = document.getElementById("add-marker-form");
 
+    function loadMarkers() {
+        fetch("/api/markers")
+            .then(response => response.json())
+            .then(markers => {
+                console.log("Fetched markers:", markers); // Log the fetched markers
+                markers.forEach(marker => {
+                    if (marker.latitude && marker.longitude) {
+                        L.marker([marker.latitude, marker.longitude], { title: marker.title, draggable: true }).addTo(map);
+                    } else {
+                        console.error('Invalid marker data:', marker);
+                    }
+                });
+            })
+            .catch(error => {
+                console.error("Error fetching markers:", error);
+            });
+    }
+
+    loadMarkers();
+
     map.on('click', function (e) {
         markerForm.style.display = "block";
         addMarkerForm.dataset.lat = e.latlng.lat;
@@ -80,7 +100,8 @@
         const infoDiv = document.getElementById('info');
         const industries = e.target.options.properties.industries.map(i => i.name).join(", ");
         const infoHTML = `
-            <h4>${e.target.options.title}</h4>
+            <h4>${e.target.options.title}</
+                <h4>${e.target.options.title}</h4>
             <ul>
                 <li>Population: ${e.target.options.properties.population}</li>
                 <li>Website: <a href="${e.target.options.properties.website}">${e.target.options.properties.website}</a></li>

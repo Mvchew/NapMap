@@ -15,6 +15,13 @@ namespace NapMap.Controllers
             _dbContext = dbContext;
         }
 
+        [HttpGet]
+        public IActionResult GetAllMarkers()
+        {
+            var markers = _dbContext.Markers.ToList();
+            return Ok(markers);
+        }
+
         [HttpPost]
         public IActionResult AddMarker([FromBody] Marker marker)
         {
