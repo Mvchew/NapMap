@@ -1,0 +1,29 @@
+﻿@model IEnumerable<NapMap.Models.Marker>
+
+@{
+    ViewData["Title"] = "Marker List";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var marker in Model)
+        {
+                <tr>
+                    <td>@marker.Id</td>
+                    <td>@marker.Title</td>
+                    <td>@marker.Latitude</td>
+                    <td>@marker.Longitude</td>
+                </tr>
+        }
+    </tbody>
+</table>
