@@ -17,10 +17,22 @@ namespace NapMap.Controllers
             return View();
         }
 
-        public IActionResult MarkersTable() 
-        { 
+        public IActionResult MarkersTable()
+        {
             var markers = _dbContext.Markers.ToList();
             return View(markers);
+        }
+
+        [HttpPost]
+        public IActionResult DeleteMarker(int id)
+        {
+            var marker = _dbContext.Markers.Find(id);
+            if (marker != null)
+            {
+                _dbContext.Markers.Remove(marker);
+                _dbContext.SaveChanges();
+            }
+            return RedirectToAction("MarkersTable");
         }
     }
 }

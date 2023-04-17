@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\js\\map.js"
     },
     {
+      "Id": "C:\\Users\\Melvi\\source\\repos\\NapMap\\NapMap\\wwwroot\\js\\markerModal.js",
+      "PackagePath": "staticwebassets\\js\\markerModal.js"
+    },
+    {
       "Id": "C:\\Users\\Melvi\\source\\repos\\NapMap\\NapMap\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

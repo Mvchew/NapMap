@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BQCyix1Ol7S+LZPbRUgqmbaHIDGwyZAzdnDR+DCfgbY=",
+  "Hash": "kBDWoxfhkAZTpeHVeupXf+79reuJlJ5XmZqDQYMEfvI=",
   "Source": "NapMap",
   "BasePath": "_content/NapMap",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\map.js"
+    },
+    {
+      "Identity": "C:\\Users\\Melvi\\source\\repos\\NapMap\\NapMap\\wwwroot\\js\\markerModal.js",
+      "SourceId": "NapMap",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Melvi\\source\\repos\\NapMap\\NapMap\\wwwroot\\",
+      "BasePath": "_content/NapMap",
+      "RelativePath": "js/markerModal.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\markerModal.js"
     },
     {
       "Identity": "C:\\Users\\Melvi\\source\\repos\\NapMap\\NapMap\\wwwroot\\js\\site.js",
