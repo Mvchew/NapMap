@@ -26,7 +26,8 @@
                 <td>@marker.Latitude</td>
                 <td>@marker.Longitude</td>
                 <td>
-                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-marker-id="@marker.Id">Delete</button>
+                    <button type="button" class="btn btn-primary edit-button" data-marker-id="@marker.Id">Edit</button>
+                    <button type="button" class="btn btn-danger delete-button" data-bs-toggle="modal" data-marker-id="@marker.Id">Delete</button>
                 </td>
             </tr>
         }
@@ -53,6 +54,40 @@
         </div>
     </div>
 </div>
+
+<!-- Edit Modal -->
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editModalLabel">Edit Marker</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form id="editMarkerForm" data-url="@Url.Action("EditMarker", "Home")" asp-action="EditMarker" asp-controller="Home" method="post">
+                <input type="hidden" name="Id" id="editMarkerId" />
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="editTitle" class="form-label">Title</label>
+                        <input type="text" class="form-control" id="editTitle" name="Title" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="editLatitude" class="form-label">Latitude</label>
+                        <input type="number" step="any" class="form-control" id="editLatitude" name="Latitude" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="editLongitude" class="form-label">Longitude</label>
+                        <input type="number" step="any" class="form-control" id="editLongitude" name="Longitude" required />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
 
 @section Scripts {
    <script src="~/js/markerModal.js"></script>

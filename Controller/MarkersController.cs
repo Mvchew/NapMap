@@ -22,6 +22,18 @@ namespace NapMap.Controllers
             return Ok(markers);
         }
 
+        [HttpGet("{id}")]
+        public IActionResult GetMarkerById(int id)
+        {
+            var marker = _dbContext.Markers.Find(id);
+            if (marker == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(marker);
+        }
+
         [HttpPost]
         public IActionResult AddMarker([FromBody] Marker marker)
         {

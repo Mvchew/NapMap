@@ -34,5 +34,20 @@ namespace NapMap.Controllers
             }
             return RedirectToAction("MarkersTable");
         }
+
+        [HttpPost]
+        public IActionResult EditMarker(Marker model)
+        {
+            var marker = _dbContext.Markers.Find(model.Id);
+            if (marker != null)
+            {
+                marker.Title = model.Title;
+                marker.Latitude = model.Latitude;
+                marker.Longitude = model.Longitude;
+                _dbContext.SaveChanges();
+            }
+            return RedirectToAction("MarkersTable");
+        }
+
     }
 }
